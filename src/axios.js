@@ -1,7 +1,8 @@
 import axios from "axios";
 
 const instance = axios.create({
-  baseURL: "http://localhost:5001/clone-65613/us-central1/api",
+  baseURL: "https://us-central1-clone-65613.cloudfunctions.net/api",
+  //"http://localhost:5001/clone-65613/us-central1/api",
   // baseURL: '...' // at this point we don't have an API, we've done no cloud-function work, noting like that. THE API (cloud function) URL
   // baseURL: 'http://localhost:5001/clone-e8235/us-central1/api'  // it is /api because we have
   // exports.api = functions.https.onRequest(app); in functions index.js
