@@ -1,16 +1,43 @@
 import React from "react";
 import "./Home.css";
 import Product from "./Product";
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
 
 function Home() {
   return (
     <div className="home">
       <div className="home__container">
-        <img
+        {/* <img
           className="home__image"
           src="https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg"
           alt=""
-        />
+        /> */}
+        <AliceCarousel
+          autoPlay
+          autoPlayInterval="3000"
+          disableDotsControls="false"
+          disableSlideInfo="false"
+          disableButtonsControls="false"
+          infinite="true"
+        >
+          <img
+            className="home__image"
+            src="https://images-na.ssl-images-amazon.com/images/G/01/kindle/apub/Elsewhere/Elsewhere_GW_DesktopHero_3000x1200._CB405350248_.jpg"
+          />
+          <img
+            src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2020/HOLIDAY/GW/HERO/desktop/GWDH_SND_01_2x._CB418675392_.jpg"
+            className="home__image"
+          />
+          <img
+            src="https://images-na.ssl-images-amazon.com/images/G/01/img20/events/Q4/Holiday/dash/trafficdrivers/Q4_2020_HolidayDash_TrafficDrivers_Desktop_Hero_V1B_3000x1200._CB405378406_.jpg"
+            className="home__image"
+          />
+          <img
+            src="https://images-na.ssl-images-amazon.com/images/G/01/kindle/tahoe/gateway/P37156875_US-EN_GW_Hero_DWK_Desktop_3000x1200_Hol._CB418764039_.jpg"
+            className="home__image"
+          />
+        </AliceCarousel>
 
         <div className="home__row">
           <Product
